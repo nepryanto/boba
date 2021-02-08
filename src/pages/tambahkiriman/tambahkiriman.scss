@@ -1,0 +1,67 @@
+page-tambahkiriman {
+    .back_button{
+        color: #000000;
+        font-size: 26px;
+        padding-top: 5px;
+    }
+
+    .searchbar-md{
+        padding: 0px 30px 0px;
+    }
+
+    .searchbar-md .searchbar-input{
+        padding:6px 30px 6px 40px;
+        border-radius:0px;
+    }
+
+    ion-fab{
+        bottom: 30px !important;
+        right: 55px !important;
+    }
+
+    .search_list{       
+        margin: 0px;
+        position: absolute;
+        top: 62%;
+        left: 30px;
+        z-index: 2;
+    }
+
+    .search2_list{       
+        margin: 0px;
+        position: absolute;
+        top: 98%;
+        left: 30px;
+        z-index: 2;
+    }
+
+    .List_items{
+        padding: 0px 15px !important;
+        width: 315px;
+    }
+
+    #map {
+        height: 300px;
+      }
+
+    .second_search_div{
+        margin: 10px 0px 5px;
+    }
+
+    
+
+    .pop_Open_div{
+        position: absolute;
+        bottom: 10px;
+        left: 40%;
+    }
+
+    .pop_open_button{
+        background: #ffffff;
+        color: #000000;
+        // padding: 0px;
+        height: 22px;
+        font-size: 25px !important;
+        font-weight: 900;
+    }
+}

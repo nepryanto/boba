@@ -1,0 +1,30 @@
+<ion-content>
+  <div class="full_div">
+    <ion-row>
+      <ion-col col-6>
+        <div class="taxi_id_div">Taxi ID - 1234TA</div>
+        <div class="near_you_div">Near by you</div>
+      </ion-col>
+      <ion-col col-6 text-right>
+        <div class="taxi_rate_div">$39.00</div>
+        <div class="near_you_div">15 MIN</div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-6>
+        <div (click)="PayOption(0)" [ngClass]="(Home_category == '0') ? 'Image_select_col' : 'Payment_div'">
+          <img src="assets/imgs/wallet.png" class="payment_logo_img"><br>
+          Payment
+        </div>
+      </ion-col>
+      <ion-col col-6>
+        <div (click)="PayOption(1)" [ngClass]="(Home_category == '1') ? 'Image_select_col' : 'Payment_div'">
+          <img src="assets/imgs/ticket.png" class="payment_logo_img"><br>
+          Coupon Code
+        </div>
+      </ion-col>
+    </ion-row>
+    <button ion-button block class="Choose_button" (click)="choosevehicle()">Choose your Vehicle</button>
+  </div>
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>Profil</ion-title>
+    </ion-navbar>
+  </ion-header>
+<ion-content padding>
+    <ion-avatar>
+        <img src="../../assets/imgs/cam.jpg" class="center">
+    </ion-avatar>
+    <ion-item>
+        <ion-label floating>Nama Lengkap</ion-label>
+        <ion-input type="text" ></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Email</ion-label>
+        <ion-input type="text" ></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>No Hp</ion-label>
+        <ion-input type="text" ></ion-input>
+    </ion-item>
+    <ion-grid>
+        <ion-row>
+            <ion-col col-6>
+                <button ion-button block>Update</button>
+            </ion-col>
+            <ion-col col-6>
+                <button ion-button block color="danger" (click)="keluar()">Keluar</button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

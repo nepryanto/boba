@@ -1,0 +1,43 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header class="top">
+      <h1 text-center>Kiriman No : 0123456</h1>
+    </ion-card-header>
+
+  <ion-item>
+    <ion-icon name="pin" item-start large color="primary"></ion-icon>
+    <h2>Bapak Gilang</h2>
+    <p>Jalan Harmoni No.1</p>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="pin" item-start large color="danger"></ion-icon>
+    <h2>Bapak Agus</h2>
+    <p>Jalan Makassar No.1</p>
+  </ion-item>
+
+  <ion-item>
+  
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6>
+          <button color="secondary" ion-button icon-start clear item-end (click)="notif()">
+            <ion-icon name="checkmark" color="secondary"></ion-icon>
+            Terima
+          </button>
+        </ion-col>
+        <ion-col col-6>
+          <button color="danger" ion-button icon-start clear item-end (click)="notif()">
+            <ion-icon name="checkmark" color="danger"></ion-icon>
+            Tolak
+          </button>
+        </ion-col>
+        
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+  </ion-card>
+  <ion-fab right bottom>
+      <button ion-fab (click)="tambah()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-content>

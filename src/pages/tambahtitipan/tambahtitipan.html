@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Tambah Kiriman</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label stacked>Asal</ion-label>
+    <ionic-selectable item-content [(ngModel)]="asal" [items]="kota" itemValueField="id" itemTextField="name"
+      [canSearch]="true" (onChange)="kotaasal($event)">
+    </ionic-selectable>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Tujuan</ion-label>
+    <ionic-selectable item-content [(ngModel)]="tujuan" [items]="kota" itemValueField="id" itemTextField="name"
+      [canSearch]="true" (onChange)="kotatujuan($event)">
+    </ionic-selectable>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Jumlah</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4>
+        <ion-item>
+          <ion-label floating>Panjang</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-4>
+        <ion-item>
+          <ion-label floating>Lebar</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-4>
+        <ion-item>
+          <ion-label floating>Tinggi</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <ion-item>
+          <ion-label floating>Volume</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-6>
+        <ion-item>
+          <ion-label floating>Kg</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <button ion-button block>Tambahkan</button>
+</ion-content>
